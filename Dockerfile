@@ -11,9 +11,8 @@ MAINTAINER Douglas McCloskey <dmccloskey87@gmail.com>
 RUN apt-get update && apt-get install -y
 
 # Install cufflinks from http
-#RUN cd /user/local
 WORKDIR /user/local/
-RUN wget http://github.com/barricklab/breseq/releases/tag/v0.26.0/breseq-0.26.0-Linux-x86_64.tar.gz
+RUN wget https://github.com/barricklab/breseq/releases/download/v0.26.0/breseq-0.26.0-Linux-x86_64.tar.gz
 RUN tar -zxvf breseq-0.26.0-Linux-x86_64.tar.gz
 
 # add cufflinks to path
