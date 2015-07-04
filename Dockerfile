@@ -16,7 +16,7 @@ RUN wget http://cole-trapnell-lab.github.io/cufflinks/assets/downloads/cufflinks
 RUN tar -zxvf cufflinks-2.2.1.Linux_x86_64.tar.gz
 
 # add cufflinks to path
-ENV PATH /user/local/cufflinks-2.2.1.Linux_x86_64/bin:$PATH
+ENV PATH /user/local/cufflinks-2.2.1.Linux_x86_64:$PATH
 
 # Cleanup
 RUN rm -rf cufflinks-2.2.1.Linux_x86_64.tar.gz
