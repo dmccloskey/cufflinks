@@ -22,10 +22,10 @@ ENV PATH /user/local/cufflinks-2.2.1.Linux_x86_64:$PATH
 RUN rm -rf cufflinks-2.2.1.Linux_x86_64.tar.gz
 RUN apt-get clean
 
-## Create an app user
-#ENV HOME /home/user
+# Create an app user
+ENV HOME /home/user
 #RUN useradd --create-home --home-dir $HOME user \
 #    && chown -R user:user $HOME
 
-#WORKDIR $HOME
+WORKDIR $HOME
 #USER user
